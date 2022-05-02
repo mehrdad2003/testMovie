@@ -12,6 +12,17 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+    var now = new Date();
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.async = true;
+    var script_address = 'https://cdn.yektanet.com/js/moviealborz.netlify.app/native-moviealborz.netlify.app-23016.js';
+    script.src = script_address + '?v=' + now.getFullYear().toString() + '0' + now.getMonth() + '0' + now.getDate() + '0' + now.getHours();
+    head.appendChild(script);
+    })();
+</script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
   <style>
@@ -55,7 +66,7 @@ padding: 0;
   </style>
 </head>
 <body>
-  <div id="pos-article-display-69562"></div> 
+ 
 <div style="position: relative; background-image: linear-gradient(to right, #2101b9, #005eec, #0090f8, #00bcee, #00e3e3); min-height: 99vh;">
           
 <div id='hd'> 
@@ -72,7 +83,9 @@ padding: 0;
     
       <div class="card-body">
         <div class="row">
+          <div id="pos-article-display-69562"></div>
           <div class="col-md-12">
+
             <div class="form-group">
               <label class="text-weight"><b>Enter YT Video Link:</b></label>
               <input type="txt" name="link" class="form-control link" required>
